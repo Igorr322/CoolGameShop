@@ -55,7 +55,7 @@ class Parser:
             self.data_client_imp.insert(connection, item[0].replace("'s", "s"), item[1], item[2], item[3], item[4])
 
     def run(self):
-        all_elements = self.parse_items(Parser.URL, total_items=10)
+        all_elements = self.parse_items(Parser.URL, total_items=500)
         self.save_to_postgres(all_elements)
 
 
