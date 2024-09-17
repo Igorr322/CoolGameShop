@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Контакты</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 100px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="navbar-brand" href="index.html">CoolGameShop</a>
+        <a class="text-menu" href="#home">Главная</a>
+        <a class="text-menu" href="about.html">О нас</a>
+        <a class="text-menu" href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="contact-info">
+        <h2>Мы всегда рады помочь вам!</h2>
+        <p>Если у вас есть вопросы, предложения или вам нужна помощь, не стесняйтесь обращаться к нам. Наша команда
+            готова ответить на ваши запросы и предоставить необходимую поддержку.</p>
+
+
+        <h3>Телефон:</h3>
+        <p>+7 (123) 456-78-90</p>
+
+        <h3>Электронная почта:</h3>
+        <p>info@coolgameshop.com</p>
+
+
+        <h3>Социальные сети:</h3>
+        <div class="social-links">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
+        </div>
+
+        <h3>Форма обратной связи:</h3>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваша электронная почта" required>
+            <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+
