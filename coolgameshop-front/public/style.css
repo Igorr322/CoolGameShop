@@ -48,3 +48,45 @@ nav a:hover {
     padding-left: 10px;
     font-size: 25px
 }
+
+.btn-register {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Синий цвет */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убрать подчеркивание */
+    border-radius: 5px; /* Закругленные края */
+    margin-left: 20px; /* Отступ слева */
+}
+
+.btn-register:hover {
+    background-color: #0056b3; /* Темнее синий при наведении */
+}
+
+
+
+
+/*////////////////////////////*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.btn-register {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+#registrationForm {
+    margin-top: 20px;
+}
