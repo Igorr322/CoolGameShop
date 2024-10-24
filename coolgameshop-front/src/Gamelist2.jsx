@@ -24,6 +24,24 @@ const GameList = () => {
     fetchGames();
   }, []);
 
+  const gameItemStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '90px',
+        border: '5px solid #2E9AFF'
+    };
+  //
+  // const gamelistStyle = {
+  //       display: 'flex',
+  //       flexDirection: 'column',
+  //       padding: '20px',
+  //   };
+  //
+  //
+  // const game = {
+  //     border: '5px solid #2E9AFF'
+  // };
+
   if (loading) {
     return <div>Загрузка...</div>;
   }
@@ -34,12 +52,11 @@ const GameList = () => {
 
   return (
     <div className={"data"}>
-      <h1>Список наших крутых игр</h1>
       <ul>
         {games.map((game, index) => (
           <li key={index}>
             <h2>{game.name}</h2>
-            <img src={game.link_img} alt={game.name} />
+            <img src={game.link_img} alt={game.name}/>
             <p>{game.description}</p>
             <p>Цена: {game.price} ₽</p>
             <a href={game.link} target="_blank" rel="noopener noreferrer">Ссылка на игру</a>
