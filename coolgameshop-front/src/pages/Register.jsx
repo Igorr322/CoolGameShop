@@ -26,20 +26,21 @@ const Register = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
+        <form onSubmit={handleSubmit} style={{padding: '110px'}}>
+            <div style={{padding: '20px'}}>
                 <label>Username:</label>
                 <input type="text" name="username" value={formData.username} onChange={handleChange} />
             </div>
-            <div>
+            <div style={{padding: '20px'}}>
                 <label>Email:</label>
                 <input type="email" name="email" value={formData.email} onChange={handleChange} />
             </div>
-            <div>
+            <div style={{padding: '20px'}}>
                 <label>Password:</label>
                 <input type="password" name="password" value={formData.password} onChange={handleChange} />
             </div>
             <button type="submit">Register</button>
+            <p>Уже есть аккаунт? <a href="/login">Войдите здесь</a></p>
         </form>
     );
 };

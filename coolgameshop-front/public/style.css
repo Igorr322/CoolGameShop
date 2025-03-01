@@ -59,6 +59,16 @@ nav a:hover {
     margin-left: 20px; /* Отступ слева */
 }
 
+.btn-enter {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #990000; /* Красный цвет */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убрать подчеркивание */
+    border-radius: 5px; /* Закругленные края */
+    margin-left: 20px; /* Отступ слева */
+}
+
 .btn-register:hover {
     background-color: #0056b3; /* Темнее синий при наведении */
 }

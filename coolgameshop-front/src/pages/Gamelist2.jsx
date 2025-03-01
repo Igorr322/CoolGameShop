@@ -24,12 +24,12 @@ const GameList = () => {
     fetchGames();
   }, []);
 
-  const gameItemStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        padding: '90px',
-        border: '5px solid #2E9AFF'
-    };
+  // const gameItemStyle = {
+  //       display: 'flex',
+  //       flexDirection: 'column',
+  //       padding: '90px',
+  //       border: '5px solid #2E9AFF'
+  //   };
   //
   // const gamelistStyle = {
   //       display: 'flex',
@@ -51,7 +51,7 @@ const GameList = () => {
   }
 
   return (
-    <div className={"data"}>
+    <div className={"data"} style={{margin: '70px'}}>
       <ul>
         {games.map((game, index) => (
           <li key={index}>
